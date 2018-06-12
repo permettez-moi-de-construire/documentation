@@ -105,6 +105,7 @@
     "release": "standard-version",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
+    "postinstall": "npm run prepublish",
     "format": "prettier --write '{src,__tests__,declarations,bin,default_theme}/**/*.js'",
     "doc": "node ./bin/documentation.js build src/index.js -f md --access=public > docs/NODE_API.md",
     "self-lint": "node ./bin/documentation.js lint src",
